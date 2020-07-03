@@ -1,35 +1,138 @@
-
-
-
 /* Tachya --> CSS Content (responsive column) */
 .column {
+    float: left;
+    width: 25%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  /* Tachya --> End of CSS Content (responsive column) */
+
+  /* Valen --> CSS Content (animated box) */
+
+  body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .heading {
+      background-color: #f6fbff;
+      color: rgb(32, 37, 63);
+  }
+
+  .message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: #f6fbff;
+  }
+  
+  .message {
+     font-family: "roboto";
+     font-style: bold;
+     color: rgb(32, 37, 63);
+    padding: 15px 40px;
+    background-color: #9bb8ee;
+    cursor: pointer;
+    box-shadow: 0 7px #7291cc;
+  }
+
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+
+
+
+  .contact-form {
+    padding-top: 100px;
+    background-color: #f6fbff;
+  }
+  
+
+  input, textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding : 20px;
+    font-size: 18px;
+    
+    border: 1px solid #dee7ec;
+  }
+ 
+  .contact-submit {
+    background: #dee7ec;
+    color: rgb(32, 37, 63);
+    animation: kotak 2s ease;
+  }
+
+  @keyframes kotak {
+    from {
+        width: 50px;
+    }
+    to {
+        width: 400px;
+    }
+  }
+  
+  footer img {
+    width: 130px;
+  }
+  
+ 
+  footer {
+    padding-top: 30px;
+    background-color: #f6fbff;
+  }
+
+  
+.footer {
+  background-color: #FFF;
+  color: rgb(32, 37, 63);
+  height: 120px;
+  padding: 40px;
+}
+
+.footer-logo {
   float: left;
-  width: 25%;
+  font-size: 32px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.footer-list {
+  float: right;
 }
 
-
-.content {
-  background-color: white;
-  padding: 10px;
+.footer-list li {
+  padding-bottom: 20px;
 }
 
-
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-/* Tachya --> End of CSS Content (responsive column) */
+  /* Valen --> End of CSS Content (Animated Box) */
